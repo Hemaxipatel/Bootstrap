@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ysabeau&display=swap');
+
+/* ===================== common css ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ysabeau", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Josefin Sans";
+    margin: 0;
+}
+
+/* =================== header navigation =================== */
+header {
+    box-shadow: 0px 0px 5px 0px gray;
+    position: fixed;
+    z-index: 1111;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.header-fixed {
+    background-color: #0b310dc7 !important;
+    box-shadow: 0px 0px 5px 0px gray;
+    position: fixed;
+    z-index: 1111;
+    width: 100%;
+    /* background: transparent; */
+    backdrop-filter: blur(10px);
+}
+
+header .navbar-nav {
+    justify-content: end !important;
+    width: 100%;
+}
+
+header .navbar-nav a {
+    color: black;
+    font-weight: 700 !important;
+}
+
+header .navbar-nav a.active {
+    color: #2a7d2e !important;
+}
+
+header .navbar-brand {
+    color: white;
+    font-weight: 700 !important;
+}
+
+header .navbar-nav a:hover {
+    color: #2a7d2e;
+}
+
+/* ===========swiper slider homepage ============= */
+.homepage .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.homepage .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+}
+
+/* .homepage .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+.homepage .slider1 {
+    background-image: url(../images/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 100px;
+}
+
+.homepage .slider1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(49, 47, 47, 0.579);
+    z-index: -1;
+}
+
+.homepage .slider2 {
+    background-image: url(../images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 100px;
+}
+
+.homepage .slider2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(49, 47, 47, 0.579);
+    z-index: -1;
+}
+
+.homepage .slider3 {
+    background-image: url(../images/banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 100px;
+}
+
+.homepage .slider3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(49, 47, 47, 0.579);
+    z-index: -1;
+}
+
+.homepage .slider4 {
+    background-image: url(../images/banner4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 100px;
+}
+
+.homepage .slider4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(49, 47, 47, 0.579);
+    z-index: -1;
+}
+
+.homepage .swiper-scrollbar {
+    opacity: 1 !important;
+    background-color: rgba(255, 255, 255, 0.621);
+    margin-bottom: 20px;
+}
+
+.homepage .swiper-scrollbar-drag {
+    background-color: white;
+    /* top: -46px; */
+}
+
+/* ============= farming-grid ================== */
+.farming-grid img {
+    height: 250px;
+    width: 400px;
+}
+
+.farming-grid .farming {
+    position: relative;
+    height: 250px;
+    width: 400px;
+    margin: auto;
+}
+
+.farming-grid .farming .farming-t {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #30b136d6;
+    color: white;
+    display: grid;
+    place-content: center;
+    height: 0%;
+    width: 100%;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+.farming-grid .farming:hover .farming-t {
+    height: 100%;
+}
+
+.farming-grid .farming .inner-txt {
+    transition: 0.5s all ease;
+    transform: scaleX(0);
+    /* visibility: hidden; */
+}
+
+.farming-grid .farming:hover .inner-txt {
+    height: 100%;
+    transform: scaleY(1);
+    /* visibility: visible; */
+}
+
+.farming-grid .farming-b-txt a:hover {
+    color: #2a7d2e !important;
+}
+
+/* ================ about farming ================ */
+.about-farming {
+    background-color: #f2fbf2;
+}
+
+.about-farming h4 {
+    color: #2a7d2e;
+}
+
+.about-farming .about-farm-tab {
+    display: flex;
+    gap: 10px;
+}
+
+.about-farming .list-group-item {
+    color: black;
+    background-color: transparent;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    font-weight: 700 !important;
+    /* border-top: 0 !important; */
+}
+
+.about-farming .list-group-item.active {
+    border-bottom: 5px solid #2a7d2e !important;
+    border-top: 0 !important;
+    color: #2a7d2e !important;
+}
+
+.about-farming .link {
+    border-bottom: 5px solid #2a7d2e;
+    width: 14.5%;
+    padding-bottom: 7px;
+}
+
+.about-farming .link a {
+    color: black !important;
+    font-weight: 700;
+}
+
+.about-farming .link a:hover {
+    color: #2a7d2e !important;
+}
+
+/* ========================== ask your self =========================== */
+.yourself h5 {
+    color: #2a7d2e;
+    font-weight: 700;
+}
+
+.yourself h1 {
+    font-weight: 800;
+}
+
+.yourself .about-self .icon {
+    height: 80px;
+    width: 80px;
+    font-size: 25px;
+    border: 4px solid #2a7d2e;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin: auto;
+    color: #2a7d2e;
+}
+
+.yourself .about-self h3 a {
+    color: black;
+    font-weight: 700;
+}
+
+.yourself .about-self:hover .icon {
+    background-color: #2a7d2e;
+    color: white;
+}
+
+.yourself .about-self p {
+    font-size: 18px;
+}
+
+/* ================== request call back form ================== */
+
+.request-form {
+    background-image: url(../images/banner4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    /* height: 500px; */
+}
+
+.request-form::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #070A0CB5;
+    z-index: -1;
+}
+
+.request-form-input {
+    background-color: #fff;
+    padding: 60px;
+    /* margin: auto; */
+}
+
+.request-form-input h6 {
+    color: #2a7d2e;
+}
+
+.request-form-input .user-input {
+    height: 45px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 40px;
+}
+
+.request-form-input button {
+    height: 50px;
+    width: 100%;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #2a7d2e;
+    border: 1px solid transparent;
+}
+
+.request-form-input .user-input:focus {
+    box-shadow: none;
+    border: 2px solid #2a7d2e;
+}
+
+.request-form-input button:hover {
+    background-color: #5c5a5a;
+    border: 1px solid transparent;
+}
+
+/* ====================== blog post ================== */
+.blog-post h5 {
+    color: #2a7d2e;
+}
+
+.blog-post .blog-text h2 a {
+    font-size: 30px;
+    font-weight: 700 !important;
+    color: #323b43;
+}
+
+.blog-post .blog-text {
+    color: #59626a;
+}
+
+.blog-post i {
+    color: #2a7d2e !important;
+}
+
+/* ========================= our stats ================ */
+.our-stats {
+    background-image: url(../images/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.our-stats::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #070A0CB5 !important;
+    z-index: -1;
+}
+
+.our-stats .right-text {
+    background-color: #f2fbf2;
+    padding: 100px 0px;
+}
+
+.our-stats h2 {
+    font-weight: 700;
+}
+
+.our-stats h1 {
+    font-size: 45px;
+    font-weight: 700;
+    width: 85%;
+}
+
+.our-stats .icon i {
+    font-size: 35px;
+    color: #2a7d2e;
+}
+
+.our-stats .text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #323b43;
+}
+
+.our-stats .text p {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #59626a;
+}
+
+/* ================== our plans =================== */
+.our-plans h5 {
+    color: #2a7d2e;
+    font-weight: 700;
+}
+
+.our-plans .plans-flex-box {
+    display: flex;
+    justify-content: center;
+}
+
+.our-plans .plans-flex-box .plans-inner-flex {
+    border: 2px solid #dcefdc;
+    padding: 50px;
+}
+
+.our-plans .plans-inner-flex .p-text {
+    background-color: #bdffc0;
+    padding: 10px;
+    text-align: center;
+}
+
+.our-plans .plans-flex-box .plans-inner-flex .p-text.active {
+    background-color: #2a7d2e !important;
+    color: white;
+}
+
+.our-plans .plans-inner-flex .p-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.our-plans .plans-flex-box .plans-inner-flex .popular {
+    font-size: 13px;
+    color: #5c5a5a;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.our-plans .p-amt {
+    padding-bottom: 10px;
+}
+
+.our-plans .p-amt .amt {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.our-plans .plans-flex-box ul {
+    line-height: 32px;
+    font-size: 18px;
+}
+
+.our-plans .plans-flex-box li span {
+    padding-right: 25px;
+    color: #2a7d2e;
+}
+
+.our-plans .p-amt sup {
+    font-size: 25px;
+}
+
+.our-plans .p-amt sub {
+    font-size: 16px;
+    color: #c3cac3;
+}
+
+.our-plans .plans-flex-box .btn-signin {
+    padding: 50px;
+    text-align: center;
+}
+
+.our-plans .plans-flex-box .signin {
+    height: 40px;
+    width: 100%;
+    color: white;
+    background-color: #323b43;
+    text-transform: capitalize;
+    font-size: 16px;
+    border: none;
+}
+
+.our-plans .flex-scale {
+    transform: scaleY(1.1);
+    /* zoom: 1; */
+}
+
+.our-plans .plans-flex-box .signin:hover {
+    background-color: #2a7d2e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================== media query ==================== */
+@media (max-width:576px) {
+    .our-stats h1 {
+        font-size: 30px;
+    }
+
+    .our-stats {
+        background-position: unset;
+        background-size: 100%;
+    }
+
+    .our-stats .right-text {
+        padding: 10px 0px;
+    }
+}
+
+@media (min-width:576px) {}
+
+@media (min-width:768px) {
+    .farming-grid .f-grid {
+        width: 350px;
+        text-align: center;
+    }
+
+    .our-stats {
+        background-position: center;
+        background-size: cover;
+    }
+
+    @media (min-width:992px) {}
+}
